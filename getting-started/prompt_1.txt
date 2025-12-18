@@ -1,0 +1,53 @@
+Instrucción: Construir una aplicación en Next.js que liste aeropuertos paginados y muestre detalles de cada aeropuerto, incluyendo su ubicación en un mapa, utiliza tecnologías como zustand para el manejo de estado global de la página y App Router. 
+
+La extracción de datos se hace a través de una página externa (URL: https://api.aviationstack.com/v1/airports) protegida con una llave de acceso (Llave de acceso:  bfd90ad6b35141c5c0578b9b9e9df2d9) con el parámetro de consulta “?access_key”. Al estar manejando todo el proyecto utilizando solo tecnologías frontend la llave de acceso debe estar protegida en un .ENV que debe ser consultada al momento de hacer fetch de datos.
+
+Las tarjetas deben mostrar su “airport_name”, “country_name”, “country_iso2”, “iata_code” y “city_iata_code”, al momento de abrir la tarjeta debe mostrar los siguientes datos “airport_name”, “gmt”, “airport_id”, “icao_code”, “geoname_id”, “latitude”, “longitude”, “phone_number” (En caso que el numero de telefono sea nulo manejar dicho error mostrando el mensaje “Numero no disponible”) y “timezone”. 
+
+La ubicación por mapa se debe hacer a través de Google maps con un iframe poniendo las coordenadas proporcionadas en el API, debe tener un ancho de 1000px de ancho con 700px de alto, y ser responsivo a dispositivos móviles con un 90% del ancho total de la pantalla y 300px de alto.
+
+La paginación debe mostrar un máximo de 6 tarjetas por pagina.
+
+La página debe utilizar el renderizado estático ya que la información que se muestra no cambia frecuentemente, garantizando una carga rápida para los usuarios
+
+Contexto: Soy un desarrollador junior que busca una solución exclusivamente frontend para una empresa, necesitando una página web con la cual puedan mostrar información de sus aeropuertos a través de tarjetas, facilitando la experiencia de usuario.
+
+Datos de entrada del API: El api con el cual se debe acceder retorna los siguientes valores.
+
+```xml
+"data": [
+    {
+      "id": "5689159",
+      "gmt": "-10",
+      "airport_id": "1",
+      "iata_code": "AAA",
+      "city_iata_code": "AAA",
+      "icao_code": "NTGA",
+      "country_iso2": "PF",
+      "geoname_id": "6947726",
+      "latitude": "-17.05",
+      "longitude": "-145.41667",
+      "airport_name": "Anaa",
+      "country_name": "French Polynesia",
+      "phone_number": null,
+      "timezone": "Pacific/Tahiti"
+    }
+ ]
+```
+
+Salida: Quiero que generes la arquitectura de carpetas utilizando “Clean architecture” separando el proyecto en diferentes capas adaptadas a Next.js con App Router y TypeScript. Quiero que me especifiques la arquitectura en el siguiente formato:
+
+```xml
+/src
+  ├── /app
+  │   ├── /api
+  │   │   └── /todos
+  │   │       └── route.ts
+  ...
+```
+
+En donde me menciones la función de cada carpeta y archivo dentro
+
+Las capas obligaroias que debes utilizar son: **Domain Layer, Application Layer, Infrastructure Layer, API Layer, UI Layer.**
+
+No generes código aun solo arquitectura. En la siguiente respuesta debes generar el código en el orden que te pida.

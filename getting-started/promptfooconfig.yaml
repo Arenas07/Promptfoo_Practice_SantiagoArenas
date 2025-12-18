@@ -1,0 +1,56 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+description: 'Getting started'
+# Optionally set API keys here instead of exporting environment variables.
+# Never commit real keys to source control.
+env:
+  GEMINI_API_KEY: AIzaSyA7noy6IiIYqy2Na43oW_q1OrlEF_Uh884
+prompts:
+  - file://prompt_1.txt
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+
+tests:
+  - vars:
+      input: Aviation Stack Airports App
+    assert:
+      # Estructura base Next.js
+      - type: contains
+        value: '/src'
+      - type: contains
+        value: '/app'
+
+      # Capas obligatorias
+      - type: icontains
+        value: 'domain'
+      - type: icontains
+        value: 'application'
+      - type: icontains
+        value: 'infrastructure'
+      - type: icontains
+        value: 'api'
+      - type: icontains
+        value: 'ui'
+
+      # App Router
+      - type: icontains
+        value: 'page.tsx'
+      - type: icontains
+        value: 'layout.tsx'
+
+      # Estado global (Zustand)
+      - type: icontains
+        value: 'store'
+      - type: icontains
+        value: 'zustand'
+
+      # API externa
+      - type: icontains
+        value: 'aviation'
+      - type: icontains
+        value: 'repository'
+
+      # Renderizado estático
+      - type: icontains
+        value: 'static'
