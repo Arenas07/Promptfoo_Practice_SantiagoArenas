@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+env:
+  GEMINI_API_KEY: AIzaSyAS8gWdhWUPQDdZ8FrJNF9p6OHRrjUsyac
+prompts:
+  - file://prompt_2.txt
+
+
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+  
+
+tests:
+  assert:
+    - type: contains
+      value: "CREATE TABLE Productos"
+    
+    - type: contains
+      value: "CREATE TABLE Proveedores"
+      
+    - type: contains
+      value: "CREATE TABLE Compras"
+    
+    - type: contains
+      value: "CREATE TABLE DetalleDeCompras"
+    
+    - type: contains
+      value: "CREATE TABLE Empleados"
+
+    - type: matches
+      value: id INT AUTO_INCREMENT PRIMARY KEY
+
+
+

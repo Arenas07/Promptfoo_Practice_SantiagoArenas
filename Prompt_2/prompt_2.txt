@@ -1,0 +1,20 @@
+## 2 - Base de datos
+
+Instrucción: Diseña una base de datos relacional en MYSQL normalizada hasta su tercera forma para un mini-mercado fisico. La base de datos debe de incluir tablas, relaciones, claves primarias y foraneas, y el script para crear toda su estructura. El sistema debe poder registrar productos y precios, controlar inventario y registrar ventas, detalle de ventas y métodos de pago.
+
+Tambien debe debe cumplir ciertas relaciones, un producto puede tener varios proveedores
+
+Contexto: Soy un desarrollador junior que necesita crear un sistema para un mini-mercado que maneja productos, inventario, compras a proveedores, ventas a clientes, facturación y empleados. Se busca tener un control sobre el stock total y las ventas del día para así evitar pérdidas.
+
+Datos de entrada: El sistema debe incluir las siguientes tablas obligatorias
+
+```sql
+
+Productos
+Proveedores
+Compras y detalle de compras
+Empleados
+
+```
+
+Datos de salida: Necesito que me hagas un listado de todas las tablas y una explicación de su función, necesito que me especifiques cada una de las diferentes relaciones y un diagrama que sea posible generar en Mermaid, despues de eso necesito que me pases el script completo en MySQL.

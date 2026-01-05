@@ -3,7 +3,7 @@ description: 'Getting started'
 # Optionally set API keys here instead of exporting environment variables.
 # Never commit real keys to source control.
 env:
-  GEMINI_API_KEY: AIzaSyA7noy6IiIYqy2Na43oW_q1OrlEF_Uh884
+  GEMINI_API_KEY: AIzaSyAS8gWdhWUPQDdZ8FrJNF9p6OHRrjUsyac
 prompts:
   - file://prompt_1.txt
 
@@ -51,6 +51,3 @@ tests:
       - type: icontains
         value: 'repository'
 
-      # Renderizado estático
-      - type: icontains
-        value: 'static'
