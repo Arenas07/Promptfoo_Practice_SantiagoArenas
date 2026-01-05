@@ -1,0 +1,61 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+env:
+  GEMINI_API_KEY: AIzaSyAS8gWdhWUPQDdZ8FrJNF9p6OHRrjUsyac
+prompts:
+  - file://prompt_4.txt
+  
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+  
+
+tests:
+
+    assert:
+      assert:
+
+      - type: contains
+        value: CREATE EVENT
+
+      - type: contains
+        value: ON SCHEDULE EVERY 1 DAY
+
+      - type: contains
+        value: DO
+
+      - type: contains
+        value: productos
+
+      - type: contains
+        value: alertas_stock
+
+      - type: contains
+        value: stock_minimo
+
+      - type: contains
+        value: stock
+
+      - type: contains
+        value: INSERT INTO alertas_stock
+
+      - type: contains
+        value: producto_id
+
+      - type: contains
+        value: stock_actual
+
+      - type: contains
+        value: stock_minimo
+
+      - type: contains
+        value: CURRENT_DATE
+
+      - type: contains
+        value: event_scheduler
+

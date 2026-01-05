@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+env:
+  GEMINI_API_KEY: AIzaSyAS8gWdhWUPQDdZ8FrJNF9p6OHRrjUsyac
+prompts:
+  - file://prompt_3.txt
+  
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+  
+
+tests:
+
+    assert:
+      - type: contains
+        value: CREATE TRIGGER
+
+      - type: contains
+        value: AFTER INSERT
+
+      - type: contains
+        value: detalle_compras
+
+      - type: contains
+        value: productos
+
+      - type: contains
+        value: NEW.
+
+      - type: contains
+        value: stock
+
+      - type: contains
+        value: UPDATE productos

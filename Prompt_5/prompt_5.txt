@@ -1,0 +1,7 @@
+## 5 - Backend 
+
+Instrucción: Diseña una arquitectura basada en el patrón modelo vista controlador (MVC) para un sistema web hecho con PHP, tu tarea es separar claramente la lógica de negocio, la capa de presentación y la capa de control. Especifica la estructura de carpetas, los archivos principales, y la función de cada componente dentro del patrón MVC.
+
+Contexto: El mini-mercado necesita una arquitectura sostenible para poder registrar y procesar los pedidos efectivamente separando la logica en secciones.
+
+Datos de entrada: Los modelos necesarios son los siguientes

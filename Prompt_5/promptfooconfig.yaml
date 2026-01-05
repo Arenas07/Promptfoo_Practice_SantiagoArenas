@@ -1,0 +1,60 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+env:
+  GEMINI_API_KEY: AIzaSyDrkyhyde-O9izHTD4xe4d_lNN-8zXNQqg
+prompts:
+  - file://prompt_5.txt
+  
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+  
+
+tests:
+
+    assert:
+
+      - type: icontains
+        value: mvc
+
+      - type: icontains
+        value: modelo
+      - type: icontains
+        value: vista
+      - type: icontains
+        value: controlador
+
+      - type: matches
+        value: "(models|Model)"
+
+      - type: matches
+        value: "(controllers|Controller)"
+
+      - type: matches
+        value: "(views|View)"
+
+      - type: icontains
+        value: public
+
+      - type: icontains
+        value: index.php
+
+      - type: icontains
+        value: router
+
+      - type: icontains
+        value: config
+
+      - type: icontains
+        value: pedidos
+
+      - type: icontains
+        value: productos
+
+      - type: icontains
+        value: ventas

@@ -1,0 +1,9 @@
+## 4 - Base de datos
+
+Instrucción: Genera un evento programado en MySQL que se ejecute cada día a las 8:00 AM. El evento debe revisar la tabla inventario y registrar en una nueva tabla alertas_stock todos los productos cuyo stock sea menor al stock mínimo definido. Cada alerta debe incluir fecha, producto_id, stock_actual y stock_minimo.
+
+Contexto: El mini-mercado necesita recibir alertas automáticas para evitar quedarse sin productos esenciales. El sistema debe crear estas alertas sin intervención manual.
+
+Datos de entrada: Tabla productos y tabla alertas_stock
+
+Datos de salida: Necesito el evento completo en MySQL, una breve explicación de cómo funciona y recomendaciones sobre permisos y configuración de event_scheduler

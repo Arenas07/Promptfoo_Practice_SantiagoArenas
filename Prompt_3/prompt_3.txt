@@ -1,0 +1,9 @@
+## 3 - Base de datos
+
+Instrucción: Crea un trigger en MySQL que después de insertar una venta en detalle_compras reduzca automáticamente el stock del producto correspondiente en la tabla productos. El trigger debe validar que el stock no sea negativo. Si la cantidad vendida es mayor al stock disponible, debe cancelar la operación con un error.
+
+Contexto: Estoy trabajando con una base de datos de un mini-mercado físico que registra ventas, compras e inventario. Necesito automatizar la actualización de existencias para evitar inconsistencias en el stock.
+
+Datos de entrada: detalle_compra y productos
+
+Datos de salida: Necesito el código SQL completo del trigger, una breve explicación de cómo funciona y advertencias o recomendaciones sobre su uso
