@@ -1,0 +1,7 @@
+## 9 - Frontend
+
+Instrucción: Genera un formulario de login en frontend utilizando HTML, CSS y JavaScript. El diseño debe ser limpio, centrado y responsivo. Incluye campos de correo/usuario y contraseña, además de un botón de enviar. Debe seguir el patrón MVC.
+
+Contexto: El frontend pertenece al sistema del mini-mercado. Este módulo de login permitirá a los empleados acceder al panel donde gestionan inventario, stock y productos.
+
+Datos de salida: Se necesita el codigo HTML completo utilizando clases e IDs para un mejor manejo de estilos, el archivo CSS aplicando estilos responsive al formulario que debe estar centrado y el javascript para el envio del formulario

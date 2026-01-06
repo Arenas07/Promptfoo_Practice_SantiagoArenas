@@ -1,0 +1,34 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+env:
+  GEMINI_API_KEY: AIzaSyCP6ZgDl0WRHcYCUBH-57Ij33K8emjy294
+prompts:
+  - file://prompt_10.txt
+  
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+  
+
+tests:
+  assert:
+
+    assert:
+      - type: regex
+        value: "email\\.value\\s*===\\s*['\"]{0,1}['\"]" 
+      - type: regex
+        value: "password\\.value\\s*===\\s*['\"]{0,1}['\"]"
+
+      - type: regex
+        value: "(innerText|textContent)"
+      - type: contains
+        value: "#FF0000"
+
+      - type: not-contains
+        value: "alert("
+

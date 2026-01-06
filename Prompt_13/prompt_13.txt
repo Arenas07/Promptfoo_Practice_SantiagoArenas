@@ -1,0 +1,7 @@
+## 13 - Rutas 
+
+Instrucción: Genera el archivo de rutas utilizando el patron MVC definido con los siguientes controladores: Productos, Proveedores, Compras, Detalle de compras y Empleados. Cada ruta debe ejecutar el método correspondiente del controlador.
+
+Contexto: El mini-mercado necesita el sistema de rutas de php para permitir la comunicación entre la interfaz web junto con el backend, permitiendo asi la ejecución completa del proyecto.
+
+Salida: Necesito el código de PHP organizado en la carpeta /routes o /index acorde a la arquitectura utilizada, tambien necesito el código documentado en secciones importantes para futuro mantenimiento.

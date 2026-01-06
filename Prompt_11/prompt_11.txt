@@ -1,0 +1,7 @@
+## 11 - Loading screen
+
+Instrucción: Genera una función y estilos para mostrar un indicador visual con el texto "Cargando" mientras el usuario envía el login al servidor.
+
+Contexto: El mini-mercado necesita un loader cuando se estén enviando los datos del formulario hacia el backend, mientras que los empleados esperan a la confirmación de su inicio
+
+Datos de salida: Un div centrado y responsivo que sirva como loader, tambien se necesita el archivo de javascript que contenga la función activa del loader.

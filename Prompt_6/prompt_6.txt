@@ -1,0 +1,7 @@
+## 6 - Backend
+
+Instrucción: Quiero que generes el codigo de los modelos de productos, proveedores, compras, detalle de compras y empleados siguiendo la arquitectura MVC ya definida, necesito que generes un crud a cada modelo incluyendo (create, findAll, findByID, update, delete), necesito que la conexión con la base de datos sea segura y que maneje errores a traves de logs.
+
+Contexto: El mini-mercado debe de tener modelos establecidos en su backend hecho en PHP para permitir la comunicación correcta con los controladores.
+
+Datos de salida: Genera cada modelo paso a paso, no pases al siguiente modelo hasta verificar que todo se encuentra bien, estos archivos deben estar ubicados en la carpeta /models definida en la arquitectura, dame el codigo de PHP ordenado y listo para integrarse.

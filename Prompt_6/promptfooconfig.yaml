@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+env:
+  GEMINI_API_KEY: AIzaSyCP6ZgDl0WRHcYCUBH-57Ij33K8emjy294
+prompts:
+  - file://prompt_6.txt
+  
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+  
+
+tests:
+  tests:
+
+    assert:
+      - type: regex
+        value: "class\\s+Producto"
+
+      - type: regex
+        value: "function\\s+create\\s*\\("
+      - type: regex
+        value: "function\\s+findAll\\s*\\("
+      - type: regex
+        value: "function\\s+findById\\s*\\("
+      - type: regex
+        value: "function\\s+update\\s*\\("
+      - type: regex
+        value: "function\\s+delete\\s*\\("
+
+      - type: contains
+        value: "PDO"
+      - type: regex
+        value: "->prepare\\s*\\("
+
+      - type: regex
+        value: "try\\s*\\{[\\s\\S]*?catch\\s*\\("

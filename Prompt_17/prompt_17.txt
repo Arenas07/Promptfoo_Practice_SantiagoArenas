@@ -1,0 +1,27 @@
+## 17 - Selector de respuestas
+
+Instrucción: Desarrolla una función con zustand que permita seleccionar la respuesta correcta de un archivo json. La función debe identificar que la llave "correct_answer" coincida con la respuesta del input del usuario en la página, en caso que la respuesta coincida se debe mostrar un mensaje diciendo que acertó, en caso de fallar debe mostrar un mensaje fallido e ir a la siguiente pregunta.
+
+Contexto: Como estudiante de desarrollo de software quiero aprender a manejar setters de zustand
+
+Datos de entrada:
+
+```json
+
+[
+    {
+        "id": 1,
+        "question": "Question",
+        "answers": [
+            "answer 1",
+            "answer 2",
+            "answer 3",
+            "answer 4",
+        ],
+        "correct_answer": 0
+    }
+]
+
+```
+
+Datos de salida: La función debe ser hecha en Typescript utilizando la tecnológia de Zustand para manejar su estado a traves de un set, se espera que la función sea funcional y exportable a diferentes componentes del programa.

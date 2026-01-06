@@ -1,0 +1,7 @@
+## 16 - Frontend
+
+Instrucción: Utilizando React, Typescript y Vite desarrolla una interfaz web que muestre las preguntas y respuestas sobre una trivia con preguntas Frontend. Las preguntas deben estar centradas en la pantalla y se debe visualizar cada una de sus posibles respuestas llamando al archivo ubicado en /Store. 
+
+Contexto: Como estudiante de desarrollo de software deseo una interfaz responsive que me permita aprender a familiarizarme con la extracción de datos de archivos json
+
+Datos de salida: Quiero una interfaz construida en React que implemente todas las preguntas del json correctamente, el contenedor no puede ser mas grande de 900px de ancho y alto.

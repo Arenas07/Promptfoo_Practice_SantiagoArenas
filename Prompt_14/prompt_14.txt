@@ -1,0 +1,24 @@
+## 14 - Trivia
+
+Instrucción: Genera 10 preguntas sobre Javascript, React, Html, Css y Next.js. Y almacenalas en un json, ve agregando dificultad a cada una de las preguntas agregando tecnicismos y preguntas de analisis crítico.
+
+Contexto: Como estudiante de desarrollo de software quiero un programa en donde por medio de una trivia divertida se pueda aprender a programar en Javascript con preguntas cerradas facilmente.
+
+Datos de Salida: El formato Json que se espera recibir debe ser el siguiente
+
+```json
+
+[
+    {
+        "id": 1,
+        "question": "Question",
+        "answers": [
+            "answer 1",
+            "answer 2",
+            "answer 3",
+            "answer 4",
+        ],
+        "correct_answer": 0
+    }
+]
+```

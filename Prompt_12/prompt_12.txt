@@ -1,0 +1,7 @@
+## 12 - Barra de busqueda
+
+Instrucción: Generar un archivo de javascript que contenga la logica de busqueda de un producto haciendo uso del Controlador de Productos desde el backend en PHP a traves de un fetch, La barra de busqueda se debe implementar al Home de la página en la parte superior de la pantalla, al escribir debe de mostrar recomendaciones de productos con nombre similar.
+
+Contexto: El mini-mercado necesita una manera de buscar productos eficazmente, a traves de una barra de busqueda se puede consultar el estado actual de un producto
+
+Datos de salida: Se debe mostrar el bloque de codigo HTML que permite la inserción del buscador sin interferir con la interfaz de Home, se debe adjuntar el archivo Css con los estilos correspondientes y se debe de adjuntar la lógica de la barra de busqueda haciendo uso del fetch al controlador de Producto

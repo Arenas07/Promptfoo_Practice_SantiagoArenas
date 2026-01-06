@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+env:
+  GEMINI_API_KEY: AIzaSyCP6ZgDl0WRHcYCUBH-57Ij33K8emjy294
+prompts:
+  - file://prompt_15.txt
+  
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+
+tests:
+
+    assert:
+      - type: regex
+        value: "typescript|\\.ts"
+
+      - type: regex
+        value: "fetch\\s*\\("
+
+      - type: regex
+        value: "from\\s+['\"]zustand['\"]"
+
+      - type: regex
+        value: "create\\s*<.*>\\s*\\("
+
+      - type: regex
+        value: "set\\s*\\("
+
+      - type: icontains
+        value: "json"
+        
+      - type: regex
+        value: "export\\s+(const|default)"
+
+      - type: icontains
+        value: "/store"

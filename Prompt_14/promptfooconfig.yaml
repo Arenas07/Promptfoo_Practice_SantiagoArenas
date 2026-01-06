@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+env:
+  GEMINI_API_KEY: AIzaSyCP6ZgDl0WRHcYCUBH-57Ij33K8emjy294
+prompts:
+  - file://prompt_14.txt
+  
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+
+
+tests:
+
+    assert:
+
+      - type: llm-rubric
+        value: You are a teacher whose goal is for your students to learn the most important things about Javascript. Ask questions with a gradual increase in difficulty for people who already know a little Javascript, such as variables, data types, and conditionals.
+
+      - type: is-json
+        value: 
+          required: [id, question, answers, correct_answer]
+          type: object
+          properties:
+            id:
+              type: int
+            question:
+              type: string
+            answers:
+              type: array
+              items:
+                type: string
+            correct_answer:
+              type: int

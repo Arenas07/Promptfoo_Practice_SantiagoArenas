@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+env:
+  GEMINI_API_KEY: AIzaSyCP6ZgDl0WRHcYCUBH-57Ij33K8emjy294
+prompts:
+  - file://prompt_7.txt
+  
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+
+tests:
+
+    assert:
+      - type: contains
+        value: "class ProductoController"
+
+      - type: regex
+        value: "function\\s+index\\s*\\("
+      - type: regex
+        value: "function\\s+create\\s*\\("
+      - type: regex
+        value: "function\\s+store\\s*\\("
+      - type: regex
+        value: "function\\s+update\\s*\\(\\s*\\$id\\s*\\)"
+      - type: regex
+        value: "function\\s+delete\\s*\\(\\s*\\$id\\s*\\)"
+
+      - type: contains
+        value: "new Producto"
+
+      - type: regex
+        value: "http_response_code\\s*\\(\\s*200\\s*\\)"
+      - type: regex
+        value: "http_response_code\\s*\\(\\s*204\\s*\\)"

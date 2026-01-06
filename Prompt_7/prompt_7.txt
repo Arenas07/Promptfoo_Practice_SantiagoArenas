@@ -1,0 +1,7 @@
+## 7 - Backend 
+
+Instrucción: Genera el controlador “ProductoController” basado en la arquitectura MVC creada anteriormente y en el modelo de Producto. El controlador debe incluir los siguiente metodos: index(), create(), store(), update($id), delete($id). Retorna JSON con código 200 o 204., en caso de fallar se debe de manejar su error para permitir un flujo normal en el programa.
+
+Contexto: El controlador debe orquestar la lógica entre modelos y vistas para los productos del mini-mercado.
+
+Datos de salida: Se debe de entregar el código PHP listo para la carpeta /controllers.

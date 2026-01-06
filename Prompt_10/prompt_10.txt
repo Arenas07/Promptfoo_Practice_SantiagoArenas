@@ -1,0 +1,9 @@
+## 10 - Validación
+
+Instrucción: Genera un script de validación frontend para el formulario login, la validación debe confirmar que el correo no esté vació, que la contraseña no esté vacia, que la contraseña sea correcta y que se muestren los errores claros al usuario.
+
+Contexto: El mini-mercado debe evitar peticiones al servidor innecesarias al servidor asegurando que el formulario esté correctamente lleno antes de enviar la solicitud al Backend.
+
+Datos de entrada: Los datos que recibe provienen del ID que almacena el input del correo y la contraseña
+
+Datos de salida: Se espera un codigo de Javascript completo y funcional, al detectar algún error debe mostrarlo en pantalla con un mensaje claro utilizando un color de texto #FF0000

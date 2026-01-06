@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+# Learn more about building a configuration: https://promptfoo.dev/docs/configuration/guide
+
+description: "My eval"
+
+env:
+  GEMINI_API_KEY: AIzaSyCP6ZgDl0WRHcYCUBH-57Ij33K8emjy294
+prompts:
+  - file://prompt_16.txt
+  
+
+providers:
+  - "google:gemini-2.5-flash"
+  - "google:gemini-2.5-flash-lite"
+
+tests:
+    assert:
+
+    - type: regex
+      value: "React|useEffect|useState"
+    - type: regex
+      value: "tsx|typescript"
+
+    - type: regex
+      value: "from\\s+['\"].*/Store/.*['\"]"
+
+    - type: icontains
+      value: "question"
+
+    - type: regex
+      value: "max-width\\s*:\\s*900px|maxWidth\\s*:\\s*['\"]900px['\"]"
+      

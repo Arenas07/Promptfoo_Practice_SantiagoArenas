@@ -1,0 +1,7 @@
+## 15 - Frontend
+
+Instrucción: A traves de un archivo Typescript desarrolla un programa que permita la extracción de datos de un archivo .json a traves de un Fetch. Los archivos para la extracción de datos deben estar en una carpeta /Store la cual se encargará de almacenar los datos del json utilizando Zustand para almacenar sus respuestar y evitar sobrecargar el servidor con peticiones innecesarias.
+
+Contexto: Como estudiante de desarrollo de software deseo realizar una extracción de datos de preguntas de una trivia Frontend
+
+Datos de salida: Se espera una programa en Typescript que haga una extracción de datos con fetch, que se almacene en zustand y permita exportarse a otros componentes del programa.

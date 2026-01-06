@@ -1,0 +1,7 @@
+## 8 - Seguridad
+
+Instrucción: Genera un modulo de autenticación en PHP siguiendo la arquitectura MVC, se debe generar el controlador de autenticación con metodos de login() y logout(), validación de contraseña utilizando password_hash() y password_verify(), manejo de sesiones con session_start() y session_destroy() según corresponda. Debe incluir manejo de errores claro para cada ocasión, como cuando la sesión expira o no se encuentra la contraseña
+
+Contexto: El mini-mercado necesita un sistema de seguridad que permita unicamente que usuario autorizados puedan hacer modificaciones en el stock o inventario del sistema
+
+Datos de salida: Se necesita el codigo funcional junto con comentarios dentro del código explicando partes importantes de este, debe haber una explicación de como implementar el middleware y controlador en la ruta index del proyecto.
