@@ -5,7 +5,7 @@
 description: "My eval"
 
 env:
-  GEMINI_API_KEY: AIzaSyDrkyhyde-O9izHTD4xe4d_lNN-8zXNQqg
+  GEMINI_API_KEY: ${GEMINI_API_KEY}
 prompts:
   - file://prompt_5.txt
   
